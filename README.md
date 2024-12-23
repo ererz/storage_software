@@ -1,50 +1,52 @@
-# storage_software
+# **Product Inventory Management System**
 
-A concise and clear description of your project, its purpose, and key features.
-
----
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+A robust system for managing product inventory with barcode/QR scanning, database integration, and reporting features.
 
 ---
 
-## Overview
-
-This project is a [brief description of what it does]. Built using C++, it is designed to [key functionality].
-
-Key highlights include:
-- **Feature 1**: Describe the first feature.
-- **Feature 2**: Describe the second feature.
-- **Feature 3**: Highlight any unique aspect of the project.
-
----
-
-## Features
-
-- **High Performance**: Efficiently handles [specific tasks].
-- **Modular Design**: Easily extensible for future needs.
+## **📖 Table of Contents**
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Database Structure](#database-structure)
+- [Contributing](#contributing)
+- [License](./LICENSE)
 
 ---
 
-## Installation
+## **🔍Overview**
+This project is a complete inventory management system designed to:
+- Scan barcodes or QR codes of products.
+- Track product stock levels automatically.
+- Handle product entry with details such as category, price, and expiry date.
+- Generate weekly, monthly, quarterly, and yearly reports for:
+    - Incoming products.
+    - Outgoing products.
+    - Money spent on inventory.
+- Support configurable packaging units (e.g., bottles, packets, bags).
 
-### Prerequisites
+---
 
-Ensure you have the following installed:
-- C++ Compiler (e.g., GCC, Clang, MSVC)
-- CMake (version 3.10 or higher)
-- [Any other dependencies, such as libraries]
+## **✨ Features**
+- **Database Management:** CRUD operations for products, categories, and packaging units.
+- **Stock Tracking:** Automatic stock adjustments when scanning products.
+- **Reports:** Detailed visual reports on inventory movement and expenditures.
+- **Packaging Units:** Define and manage packaging types (e.g., bottles, packets).
 
-### Steps
+---
 
-1. Clone the repository:
+## **🛠️ Technologies Used**
+- **Programming Languages:**
+    - C++
+    - Python (Data processing and report generation).
+- **Database:** SQLite (lightweight and embedded database).
+- **Frontend/Visualization:** Matplotlib and Pandas for generating charts and graphs.
+
+---
+
+## **⚙️ Installation**
+### **Prerequisites**
+1. Install Python 3.9+ and the following Python libraries:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   pip install pandas matplotlib sqlite3
